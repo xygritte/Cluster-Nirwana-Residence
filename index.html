@@ -1,317 +1,238 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cluster Nirwana Residence</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cluster Nirwana Residence — hunian premium dengan desain modern, lingkungan eksklusif, dan fasilitas lengkap." />
+  <title>Cluster Nirwana Residence | Premium Living</title>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="styless.css" />
-    
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styless.css" />
 </head>
 
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Nirwana Residence">
+        <span class="logo-mark"><i class="fas fa-crown"></i></span>
+        <span>NIRWANA <small>RESIDENCE</small></span>
+      </a>
 
-    <!-- ==================== NAVBAR ==================== -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <i class="fas fa-home"></i> Nirwana
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#gallery"><i class="fas fa-images"></i> Galeri</a></li>
-                <li><a href="#video"><i class="fas fa-play-circle"></i> Video</a></li>
-                <li><a href="#features"><i class="fas fa-thumbs-up"></i> Keunggulan</a></li>
-                <li><a href="#team"><i class="fas fa-users"></i> Tim</a></li>
-                <li><a href="#cta" class="btn" style="padding:8px 24px; background:#2a7a62; color:#fff; border-radius:30px;">Hubungi</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#features">Fasilitas</a></li>
+        <li><a href="#team">Tim</a></li>
+        <li><a href="#cta" class="nav-cta">Konsultasi</a></li>
+      </ul>
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-        <div class="container">
-            <h1><i class="fas fa-crown"></i> Cluster Nirwana Residence</h1>
-            <p>Hunian eksklusif dengan desain modern, lingkungan asri, dan fasilitas lengkap untuk keluarga Anda.</p>
-            <a href="#gallery" class="btn btn-outline">
-                <i class="fas fa-arrow-right"></i> Jelajahi
-            </a>
-            <div class="hero-badges">
-                <span><i class="fas fa-check-circle"></i> 24 Jam Keamanan</span>
-                <span><i class="fas fa-tree"></i> Ruang Hijau 70%</span>
-                <span><i class="fas fa-dumbbell"></i> Gym</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== GALLERY ==================== -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <h2>Galeri Foto</h2>
-                <p>Suasana eksklusif Cluster Nirwana Residence dalam setiap sudut.</p>
-            </div>
-            <div class="gallery-grid">
-
-                <!-- Foto 1 -->
-                <div class="gallery-card" onclick="openLightbox(this)">
-                    <img src="1.jpeg" alt="Cluster view" loading="lazy" />
-                    <span class="badge-photo"><i class="fas fa-camera"></i> 1/6</span>
-                    <div class="caption">
-                        <h4>Fasad Utama</h4>
-                        <p><i class="fas fa-map-pin" style="color:#2a7a62;"></i> Tampilan depan cluster yang megah</p>
-                    </div>
-                </div>
-
-                <!-- Foto 2 -->
-                <div class="gallery-card" onclick="openLightbox(this)">
-                    <img src="2.jpeg" alt="Rumah modern" loading="lazy" />
-                    <span class="badge-photo"><i class="fas fa-camera"></i> 2/6</span>
-                    <div class="caption">
-                        <h4>Rumah Tipe Alfa</h4>
-                        <p><i class="fas fa-ruler-combined" style="color:#2a7a62;"></i> Luas tanah 180 m²</p>
-                    </div>
-                </div>
-
-                <!-- Foto 3 -->
-                <div class="gallery-card" onclick="openLightbox(this)">
-                    <img src="3.jpeg" alt="Rumah modern" loading="lazy" />
-                    <span class="badge-photo"><i class="fas fa-camera"></i> 3/6</span>
-                    <div class="caption">
-                        <h4>Kolam Renang</h4>
-                        <p><i class="fas fa-water" style="color:#2a7a62;"></i> Kolam infinity dengan view hijau</p>
-                    </div>
-                </div>
-
-                <!-- Foto 4 -->
-                <div class="gallery-card" onclick="openLightbox(this)">
-                    <img src="4.jpeg" alt="Rumah modern" loading="lazy" />
-                    <span class="badge-photo"><i class="fas fa-camera"></i> 4/6</span>
-                    <div class="caption">
-                        <h4>Taman Sentral</h4>
-                        <p><i class="fas fa-leaf" style="color:#2a7a62;"></i> Area bermain dan bersantai</p>
-                    </div>
-                </div>
-
-                <!-- Foto 5 -->
-                <div class="gallery-card" onclick="openLightbox(this)">
-                    <img src="5.jpeg" alt="Rumah modern" loading="lazy" />
-                    <span class="badge-photo"><i class="fas fa-camera"></i> 5/6</span>
-                    <div class="caption">
-                        <h4>Interior Modern</h4>
-                        <p><i class="fas fa-couch" style="color:#2a7a62;"></i> Desain minimalis elegan</p>
-                    </div>
-                </div>
-
-                <!-- Foto 6 -->
-                <div class="gallery-card" onclick="openLightbox(this)">
-                    <img src="6.jpeg" alt="Rumah modern" loading="lazy" />
-                    <span class="badge-photo"><i class="fas fa-camera"></i> 6/6</span>
-                    <div class="caption">
-                        <h4>Clubhouse</h4>
-                        <p><i class="fas fa-building" style="color:#2a7a62;"></i> Ruang serbaguna & lounge</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== VIDEO ==================== -->
-    <section class="video-section" id="video">
-        <div class="container">
-            <div class="section-title">
-                <h2><i class="fab fa-youtube" style="color:#ff3b30;"></i> Video Profil</h2>
-                <p>Lihat suasana Cluster Nirwana Residence dalam video berikut.</p>
-            </div>
-
-            <div class="video-wrapper">
-                <!-- YouTube embed (ganti src dengan link video Anda) -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m49Bkwli1v8?si=V_LfEj98_7HTsc2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="video-caption">
-            <i class="fas fa-play-circle"></i> Klik play untuk melihat video profil cluster kami.
-        </div>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-</section>
+  </nav>
 
-<!-- ==================== FEATURES ==================== -->
-<section class="features" id="features">
-    <div class="container">
-        <div class="section-title">
-            <h2>Keunggulan Cluster</h2>
-            <p>Nikmati kenyamanan dan kemewahan di setiap detail.</p>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-video" aria-hidden="true">
+        <iframe
+          src="https://www.youtube.com/embed/m49Bkwli1v8?autoplay=1&mute=1&controls=0&loop=1&playlist=m49Bkwli1v8&modestbranding=1&playsinline=1&rel=0"
+          title="Nirwana Residence cinematic background"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="eyebrow"><span></span> PREMIUM PRIVATE RESIDENCE <span></span></div>
+        <h1>Rumah yang terasa seperti <em>warisan.</em></h1>
+        <p>Hunian eksklusif dengan arsitektur modern, ruang hijau yang menenangkan, dan pengalaman tinggal yang dirancang untuk mereka yang menghargai kualitas.</p>
+
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-gold">Jelajahi Residence <i class="fas fa-arrow-right"></i></a>
+          <a href="#about" class="btn btn-ghost">Kenali Nirwana</a>
         </div>
+
+        <div class="hero-stats">
+          <div><strong>24/7</strong><span>Security</span></div>
+          <div><strong>70%</strong><span>Green Area</span></div>
+          <div><strong>Premium</strong><span>Amenities</span></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue"><span></span> Scroll to discover</a>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-kicker">THE NIRWANA EXPERIENCE</p>
+          <h2>Lebih dari sekadar alamat.<br /><em>Sebuah cara hidup.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>Nirwana Residence menghadirkan keseimbangan antara privasi, keindahan arsitektur, dan kenyamanan modern dalam satu kawasan yang terasa tenang sejak langkah pertama.</p>
+          <a href="#gallery" class="text-link">Lihat koleksi residence <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">SIGNATURE SPACES</p>
+            <h2>Ruang yang dibuat untuk <em>dikagumi.</em></h2>
+          </div>
+          <p>Setiap detail dirancang untuk menciptakan kesan mewah yang tetap hangat dan berkelas.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-card gallery-card-large" type="button" onclick="openLightbox(this)">
+            <img src="1.jpeg" alt="Fasad utama Cluster Nirwana Residence" loading="lazy" />
+            <span class="gallery-meta">01 / Fasad Utama</span>
+            <span class="gallery-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </button>
+          <button class="gallery-card" type="button" onclick="openLightbox(this)">
+            <img src="2.jpeg" alt="Rumah premium tipe Alfa" loading="lazy" />
+            <span class="gallery-meta">02 / Private Residence</span>
+          </button>
+          <button class="gallery-card" type="button" onclick="openLightbox(this)">
+            <img src="3.jpeg" alt="Kolam renang residence" loading="lazy" />
+            <span class="gallery-meta">03 / Infinity Pool</span>
+          </button>
+          <button class="gallery-card" type="button" onclick="openLightbox(this)">
+            <img src="4.jpeg" alt="Taman sentral" loading="lazy" />
+            <span class="gallery-meta">04 / Central Garden</span>
+          </button>
+          <button class="gallery-card" type="button" onclick="openLightbox(this)">
+            <img src="5.jpeg" alt="Interior modern" loading="lazy" />
+            <span class="gallery-meta">05 / Interior</span>
+          </button>
+          <button class="gallery-card gallery-card-wide" type="button" onclick="openLightbox(this)">
+            <img src="6.jpeg" alt="Clubhouse Nirwana Residence" loading="lazy" />
+            <span class="gallery-meta">06 / Clubhouse</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-head centered">
+          <p class="section-kicker">PRIVATE AMENITIES</p>
+          <h2>Detail premium, <em>setiap hari.</em></h2>
+          <p>Fasilitas pilihan untuk membuat keseharian lebih effortless.</p>
+        </div>
+
         <div class="features-grid">
-            <div class="feature-item">
-                <i class="fas fa-shield-alt"></i>
-                <h4>Keamanan 24 Jam</h4>
-                <p>Sistem keamanan terintegrasi & CCTV</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-tree"></i>
-                <h4>Lingkungan Hijau</h4>
-                <p>70% area hijau & taman tematik</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-dumbbell"></i>
-                <h4>Fitness Center</h4>
-                <p>Gym modern dengan alat lengkap</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-child"></i>
-                <h4>Playground</h4>
-                <p>Area bermain anak yang aman</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-store"></i>
-                <h4>Mini Market</h4>
-                <p>Kebutuhan harian tersedia di dalam cluster</p>
-            </div>
+          <article class="feature-item"><span>01</span><i class="fas fa-shield-halved"></i><h3>Private Security</h3><p>Pengamanan kawasan 24 jam dengan sistem terintegrasi.</p></article>
+          <article class="feature-item"><span>02</span><i class="fas fa-tree"></i><h3>Green Landscape</h3><p>Ruang hijau luas dan taman tematik yang menenangkan.</p></article>
+          <article class="feature-item"><span>03</span><i class="fas fa-water-ladder"></i><h3>Infinity Pool</h3><p>Area rekreasi premium untuk bersantai bersama keluarga.</p></article>
+          <article class="feature-item"><span>04</span><i class="fas fa-dumbbell"></i><h3>Fitness Center</h3><p>Gym modern untuk menjaga gaya hidup tetap aktif.</p></article>
+          <article class="feature-item"><span>05</span><i class="fas fa-children"></i><h3>Family Playground</h3><p>Ruang aman dan nyaman untuk aktivitas anak.</p></article>
+          <article class="feature-item"><span>06</span><i class="fas fa-building"></i><h3>Exclusive Clubhouse</h3><p>Lounge dan ruang serbaguna untuk momen istimewa.</p></article>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ==================== TEAM ==================== -->
-<section class="team" id="team">
-    <div class="container">
-        <div class="section-title">
-            <h2>Meet the Team</h2>
-            <p>Tim profesional di balik pengembangan Cluster Nirwana Residence.</p>
+    <section class="video-profile section">
+      <div class="container video-profile-grid">
+        <div class="video-copy">
+          <p class="section-kicker">A CINEMATIC GLIMPSE</p>
+          <h2>Rasakan suasananya<br /><em>sebelum Anda tiba.</em></h2>
+          <p>Gunakan video profil sebagai pintu masuk pertama menuju atmosfer Nirwana Residence.</p>
+          <a href="https://www.youtube.com/watch?v=m49Bkwli1v8" target="_blank" rel="noopener noreferrer" class="text-link">Putar di YouTube <i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/m49Bkwli1v8?rel=0&modestbranding=1" title="Video profil Cluster Nirwana Residence" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section-head centered">
+          <p class="section-kicker">THE TEAM</p>
+          <h2>Orang-orang di balik <em>Nirwana.</em></h2>
         </div>
         <div class="team-grid">
-            <!-- Anggota 1 -->
-            <div class="team-card">
-                <div class="team-avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <h4>Ahmad Furqon Ramadhani</h4>
-                <p class="nim">NIM: 452024611066</p>
-                <p class="role"><i class="fas fa-briefcase"></i> Project Manager / Front-End Designer</p>
-                <p class="desc">Mengelola konsep platform, implementasi website, navigasi, dan integrasi fitur utama.</p>
-            </div>
-            <!-- Anggota 2 -->
-            <div class="team-card">
-                <div class="team-avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <h4>Adhi sukmo Manunggal</h4>
-                <p class="nim">NIM: 452024611010</p>
-                <p class="role"><i class="fas fa-paint-brush"></i> UI/UX & Content Designer</p>
-                <p class="desc">Mendukung rancangan antarmuka, struktur konten, konsistensi visual, dan pengalaman pengguna.</p>
-            </div>
-            <!-- Anggota 3 -->
-            <div class="team-card">
-                <div class="team-avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <h4>Alan Sutrisno Putra</h4>
-                <p class="nim">NIM: 452024611023</p>
-                <p class="role"><i class="fas fa-cube"></i> 3D / Lumion Designer</p>
-                <p class="desc">Bertanggung jawab pada visualisasi properti, aset 3D, dan video Lumion kawasan.</p>
-            </div>
+          <article class="team-card"><div class="team-icon"><i class="fas fa-user"></i></div><h3>Ahmad Furqon Ramadhani</h3><p>Project Manager / Front-End Designer</p><span>452024611066</span></article>
+          <article class="team-card"><div class="team-icon"><i class="fas fa-user"></i></div><h3>Adhi Sukmo Manunggal</h3><p>UI/UX & Content Designer</p><span>452024611010</span></article>
+          <article class="team-card"><div class="team-icon"><i class="fas fa-user"></i></div><h3>Alan Sutrisno Putra</h3><p>3D / Lumion Designer</p><span>452024611023</span></article>
         </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="container cta-inner">
+        <p class="section-kicker">YOUR NEXT ADDRESS</p>
+        <h2>Temukan rumah yang<br /><em>sepadan dengan impian Anda.</em></h2>
+        <p>Jadwalkan konsultasi dan dapatkan informasi lengkap mengenai unit, fasilitas, dan penawaran terbaik.</p>
+        <a href="#team" class="btn btn-gold">Mulai Konsultasi <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo footer-logo"><span class="logo-mark"><i class="fas fa-crown"></i></span><span>NIRWANA <small>RESIDENCE</small></span></a>
+      <p>Premium living, thoughtfully designed.</p>
+      <div class="social"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/watch?v=m49Bkwli1v8" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></div>
     </div>
-</section>
+    <div class="container footer-bottom"><span>&copy; 2026 Cluster Nirwana Residence</span><span>All rights reserved.</span></div>
+  </footer>
 
-<!-- ==================== CTA ==================== -->
-<section class="cta" id="cta">
-    <div class="container">
-        <h3>Jadikan Hunian Impian Anda Sekarang</h3>
-        <p>Dapatkan promo menarik dan konsultasi gratis dengan tim kami.</p>
-        <a href="#" class="btn" style="background:#f6c445; color:#1e2a3a;">
-            <i class="fas fa-phone-alt"></i> Hubungi Kami
-        </a>
-    </div>
-</section>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="close-lightbox" type="button" onclick="closeLightbox(event)" aria-label="Tutup"><i class="fas fa-times"></i></button>
+    <img id="lightboxImg" src="" alt="Foto residence diperbesar" />
+  </div>
 
-<!-- ==================== FOOTER ==================== -->
-<footer class="footer">
-    <div class="container">
-        <div class="social">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <p>&copy; 2026 <span>Cluster Nirwana Residence</span> — All rights reserved.</p>
-    </div>
-</footer>
-
-<!-- ==================== LIGHTBOX ==================== -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <button class="close-lightbox" onclick="closeLightbox()">&times;</button>
-    <img id="lightboxImg" src="" alt="Foto diperbesar" />
-</div>
-
-<!-- ==================== JAVASCRIPT ==================== -->
-<script>
-    // ---------- HAMBURGER MENU ----------
+  <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
+    const navbar = document.getElementById('navbar');
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        // toggle icon
-        const icon = hamburger.querySelector('i');
-        if (navLinks.classList.contains('open')) {
-            icon.className = 'fas fa-times';
-        } else {
-            icon.className = 'fas fa-bars';
-        }
+      navLinks.classList.toggle('open');
+      hamburger.querySelector('i').className = navLinks.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
     });
 
-    // Tutup menu saat link diklik (mobile)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('open');
-            const icon = hamburger.querySelector('i');
-            icon.className = 'fas fa-bars';
-        });
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.querySelector('i').className = 'fas fa-bars';
+    }));
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
     });
 
-    // ---------- LIGHTBOX ----------
     function openLightbox(card) {
-        const img = card.querySelector('img');
-        if (!img) return;
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        lightboxImg.src = img.src;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
+      const image = card.querySelector('img');
+      if (!image) return;
+      document.getElementById('lightboxImg').src = image.src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.classList.add('no-scroll');
     }
 
-    function closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
+    function closeLightbox(event) {
+      if (event) {
+        const target = event.target;
+        if (target.id !== 'lightbox' && !target.closest('.close-lightbox')) return;
+        event.stopPropagation();
+      }
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.classList.remove('no-scroll');
     }
 
-    // Tutup lightbox dengan tombol ESC
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            closeLightbox();
-        }
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeLightbox();
     });
-
-    // ---------- SMOOTH SCROLL (opsional) ----------
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-</script>
-
+  </script>
 </body>
 </html>
